@@ -8,8 +8,8 @@ const variables = {
         host: process.env.DB_HOST || 'localhost',
         port: process.env.DB_port || '27017',
         name: process.env.DB_NAME || 'test',
-        user: process.env.DB_USER,
-        passwd: process.env.DB_PASSWD,
+        user: process.env.DB_USER || null,
+        passwd: process.env.DB_PASSWD || null,
         connection: process.env.MONGOOSE_CONNECTION || 'mongodb://localhost:27017/database'
     },
     consoleColors: {
